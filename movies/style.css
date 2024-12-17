@@ -1,0 +1,198 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #f4f4f4;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ff6347;
+}
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('https://img.freepik.com/premium-vector/cinema-wallpaper-social-media-message-background-copy-space-text_95169-1425.jpg') no-repeat center/cover;
+    height: 60vh;
+    color: #f4f4f4;
+    position: relative;
+    opacity: 80%;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#hero .btn {
+    padding: 0.75rem 1.5rem;
+    background: #ff6347;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#hero .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 99, 71, 0.6);
+}
+
+#genres {
+    padding: 2rem;
+    text-align: center;
+}
+
+#genres h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ff6347;
+}
+
+#genres .grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.genre-btn {
+    padding: 0.75rem 1rem;
+    background: rgba(255, 99, 71, 0.9);
+    color: #f4f4f4;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.genre-btn:hover {
+    transform: scale(1.1);
+    background: rgba(255, 99, 71, 1);
+}
+
+#top-movies {
+    padding: 3rem 2rem;
+    background: #282846;
+    color: #f4f4f4;
+}
+
+#top-movies h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff6347;
+    text-align: center;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.movie-card {
+    background: #1e1e2f;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    font-size: 1.2rem;
+    color: #ff6347;
+    margin: 1rem 0;
+}
+
+.movie-card p {
+    font-size: 0.9rem;
+    padding: 0 1rem 1rem;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #f4f4f4;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer .social-links a {
+    margin: 0 1rem;
+    color: #ff6347;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #f4f4f4;
+}
